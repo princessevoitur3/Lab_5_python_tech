@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metetl-akimova-6303-lab5"
+version = "0.1.0"
+description = "Laboratory work 5: logging, CLI, modules, packages, build and distribution"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Akimova" }
+]
+dependencies = [
+    "aiofiles>=23.0.0",
+    "aiohttp>=3.9.0",
+    "numpy>=1.24.0",
+    "opencv-python>=4.8.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+    "build>=1.5.0",
+    "twine>=6.2.0"
+]
+
+[project.scripts]
+metetl = "metetl.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
