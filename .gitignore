@@ -4,13 +4,8 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 build/
-dist/
 .pytest_cache/
 .mypy_cache/
 logs/*.log
-images/*
-!images/.gitkeep
 data/to_download.json
 data/download.json
-data/plots/*
-!data/plots/.gitkeep
